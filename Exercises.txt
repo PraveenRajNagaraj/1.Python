@@ -1,0 +1,2262 @@
+a=input()
+b=input()
+c=a+b
+print(c)
+
+result = 1020
+===
+
+
+a=int(input())
+b=int(input())
+c=a+b
+print(c)
+
+result = 30
+
+====
+get input for variable name & age and print it
+
+sample input - praveen, 20
+
+a="My Name is: "
+b=input()
+c=a+b
+d="My age is: "
+e=input()
+f=d+e
+print(c)
+print(f)
+
+Praveen
+28
+My Name is: Praveen
+My age is: 28
+
+or
+
+name=input()
+age=input()
+print("My Name is: ",name)
+print("My Age is: ", age)
+
+===========
+get input for variable name, age and address. print it
+
+name=input()
+age=input()
+address=input()
+print("My Name is: ",name)
+print("My Age is: ", age)
+print("My Address is: ", address)
+  
+result:    
+praveen
+28
+Jagir Ammapalayam
+My Name is:  praveen
+My Age is:  28
+My Address is:  Jagir Ammapalayam
+
+============
+get integer input for variable a, b, c
+multiply all three variables (a*b*c)
+add all three variables (a+b+C)
+divide the multiplies value by added values
+print it
+
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=a*b*c
+e=a+b+c
+f=d/e
+print(f)
+
+
+result:1
+
+============
+get input for variable name, score, department
+Get score for 100
+divide 100/10
+
+sample input:
+Praveen
+78
+Computer
+
+sample output:
+My Name is Praveen
+My score is 7.8/10
+My department is Computer
+
+name=input()
+score=int(input())
+department=input()
+print("My Name is ", name)
+print("My score is ",score/10,"/10")
+print("My Department is ", department)
+
+
+=========
+if else:
+
+if(True):
+    print("Yes")
+else:
+    print("No")
+
+Result: Yes
+
+if(False):
+    print("Yes")
+else:
+    print("No")
+
+
+Result: No
+
+============
+comparison operators:
+
+print("win"=="win")
+
+result - True
+
+print("win"=="winn")
+
+result - False
+===========
+a="win"
+if(a=="win"):
+    print("You are good")
+else:
+    print("Try next time")
+
+result - You are good
+
+a="lose"
+if(a=="win"):
+    print("You are good")
+else:
+    print("Try next time")
+
+result - Try next time
+
+=====
+get user input for variable Meghna, if Meghna==Died Print "Surya meets Priya"
+Else "Surya weds Meghna"
+
+meghna=input()
+if(meghna=="Died"):
+    print("Surya weds Priya")
+else:
+    print("Surya weds Meghna")
+
+ result - 
+Died
+Surya weds Priya
+
+meghna=input("Meghna Died or Not?")
+if(meghna=="Died"):
+    print("Surya weds Priya")
+else:
+    print("Surya weds Meghna")
+
+Result - 
+Meghna Died or Not?Died
+Surya weds Priya
+
+===========
+get input for variable mark. If mark>35 print pass. else print fail
+
+mark=int(input())
+if(mark>35):
+    print("Pass")
+else:
+    print("Fail")
+
+result-
+60
+Pass
+
+result-
+27
+Fail
+
+============
+get input for variable income. If income is greater than 7000 scholarship is available. Else not eligible for scholarship.
+
+income=int(input())
+if(income>7000):
+    print("Eligible for Scholarship")
+else:
+    print("Not Eligible for Scholarship")
+
+or
+
+income=int(input("Income:"))
+if(income>7000):
+    print("Eligible for Scholarship")
+else:
+    print("Not Eligible for Scholarship")
+
+==========
+
+modulus operator - it will give the reminder when we divide 15 by 3
+print(15%3)
+
+result-0
+
+print(16%3)
+
+result - 1
+
+==========
+get input for a number and check if it is divisible by both 3 and 5 or not. if yes then print, the number is divisible by 3 and 5. Else print the number is not divisible by 3 and 5
+
+number=int(input("Type the number:"))
+if(number%3 and number%5==0):
+    print("Number is divisible by 3 and 5")
+else:
+    print("Number is not divisible by 3 and 5")
+
+result - 
+Type the number:15
+Number is divisible by 3 and 5
+
+=====
+get input for a number and find it is even or odd
+
+number=int(input("Type the number:"))
+if(number%2==0):
+    print("Even")
+else:
+    print("Odd")
+
+result - 
+Type the number:15
+Odd
+
+===========
+get input for score out of 100
+if score <=35 = 'Poor student'
+if score is greater than 35 but < than 70= 'average student'
+if score is greater than 70 = 'good student'
+
+score=int(input("Type the Score out of 100:"))
+if(score<=35):
+    print("Poor Student")
+if(score>70):
+    print("Good Student")
+else:
+    print("Average Student")
+
+or
+
+score=int(input("Type the Score out of 100:"))
+if(score<=35):
+    print("Poor Student")
+if(score>35 and score<=70):
+    print("Average Student")
+if(score>70):
+    print("Good Student")
+
+ or
+
+score=int(input("Type the Score out of 100:"))
+if(score<=35):
+    print("Poor Student")
+elif(score>35 and score<=70):
+    print("Average Student")
+else:
+    print("Good Student")
+
+================
+to the above exercise, add one more condition for invalid.
+
+score=int(input("Type the Score out of 100:"))
+if(score<=35):
+    print("Poor Student")
+elif(score>35 and score<=70):
+    print("Average Student")
+elif(score>70 and score<=100):
+    print("Good Student")
+else:
+    print("Invalid")
+
+          
+==========
+Make a mini calculator
+
+get input for two numbers a and b
+get input from user whether to add/sub/mulp/div
+if user selects add then add the two numbers and print the result
+
+a=int(input("Enter the first number:"))
+b=int(input("Enter the second number:"))
+Action=input("Do you want to add or subtract or multiply or divide?")
+if(Action=="Add"):
+    print(a+b)
+elif(Action=="Sub"):
+    print(a-b)
+elif(Action=="Mul"):
+    print(a*b)
+elif(Action=="Div"):
+    print(a/b)
+else:
+    print("Invalid Action")
+
+===========
+get input for score percentage. if percentage is greater than 70, get input for his name, age, location, print 'you are eligible'. if not, print 'you are not eligible'
+
+score=int(input("Enter the score percentage:"))
+if(score>70):
+    name=input("Enter Your Name:")
+    age=input("Enter Your Age:")
+    location=input("Enter Your location:")
+    print("You are Eligible")
+else:
+    print("You are not Eligible")
+
+=============
+get input for salary and age.
+if salary greater than or equal to 20000 or age less than or equal to 25, get input for required loan amount. if not print you are not eligible for loan.
+
+if required loan amount is less than or equal to 50000 print you are eligible for loan. If it is greater than 50000 print maximum loan amount is 50000.
+
+above exercise is for Nested if statement
+
+salary=int(input("Enter the Salary:"))
+age=int(input("Enter the Age:"))
+if(salary>=20000 or age<=25):
+    loanAmount=int(input("Enter the required Loan amount:"))
+    if(loanAmount>50000):
+        print("Maximum loan amount is 50000")
+    else:
+        print("You are eligible for loan")   
+else:
+    print("You are not eligible for loan")
+
+=================
+
+get imput for five subject marks. Add all of it, and find average. if average mark is less than 35, print ' additional class is required" else print "you are good to go"
+
+a=int(input("A:"))
+b=int(input("B:"))
+c=int(input("C:"))
+d=int(input("D:"))
+e=int(input("E:"))
+avg=((a+b+c+d+e)/5)
+if(avg<35):
+    print("Additional class is required")
+else:
+    print("You are good to go")
+
+    
+=============
+for loop:
+
+for i in "apple":
+    print(i)
+
+
+result:
+a
+p
+p
+l
+e
+
+for i in range(5):
+    print(i)
+
+result:
+0
+1
+2
+3
+4
+
+for i in range(1,5):
+    print(i)
+
+result:
+1
+2
+3
+4
+
+for i in range(1,11):
+    print("emc")
+
+result:
+emc
+emc
+emc
+emc
+emc
+emc
+emc
+emc
+emc
+emc
+
+for i in range(1,11):
+    print("emc")
+    print(i)
+
+result:
+emc
+1
+emc
+2
+emc
+3
+emc
+4
+emc
+5
+emc
+6
+emc
+7
+emc
+8
+emc
+9
+emc
+10
+============
+print 2 table using loop
+
+like 1*2=2
+2*2=4
+.
+.
+10*2=20
+
+answer:
+for i in range(1,11):
+    print(i,"X2","=",i*2)
+
+
+=========
+
+get input for number a and b.
+print the number between a and b.
+
+sample input:
+8
+15
+
+sample output:
+9
+10
+11
+12
+13
+14
+
+a=int(input("A:"))
+b=int(input("B:"))
+for i in range(a+1,b):
+    print(i)
+
+result:
+A:11
+B:18
+12
+13
+14
+15
+16
+17
+
+==============
+
+print even number between 1 to 10
+
+sample output: 2, 4, 6, 8, 10
+
+for i in range(1,5+1):
+    print(i*2)	
+
+or
+
+for i in range(1,11):
+    if(i%2==0):
+    print(i)
+==================
+
+count the number of even numbers between 1 to 10
+
+sample output: 5
+
+count=0
+for i in range(1,11):
+    if(i%2==0):
+        count=count+1
+print(count)
+
+==============
+count the number of even and odd numbers between 1 to 10
+
+count=0
+count1=0
+for i in range(1,11):
+    if(i%2==0):
+        count=count+1
+    if(i%2==1):
+        count1=count1+1
+print("Even Count is:", count)
+print("Odd Count is:", count1)
+
+or
+
+count=0
+count1=0
+for i in range(1,11):
+    if(i%2==0):
+        count=count+1
+    else:
+        count1=count1+1
+print("Even Count is:", count)
+print("Odd Count is:", count1)
+
+============================
+count the number which are divisible by 3 and 5 between 1 to 100
+
+count=0
+for i in range(1,101):
+    if(i%3==0 and i%5==0):
+        count=count+1
+print(count)
+
+result- 6
+
+============
+
+write a program to compute the sum of the first 5 natural numbers
+
+sum=0
+for i in range(1,6):
+    sum=sum+i
+print(sum)
+
+
+result-15
+
+==============
+a=[1,2,3,4,5]
+for i in a:
+    print(i)
+
+result-
+1
+2
+3
+4
+5
+
+a=[]
+a.append(10)
+print(a)
+
+result - [10]
+
+
+a=[]
+a.append(10)
+a.append(20)
+a.append(30)
+a.append(40)
+b=int(input())
+a.append(b)
+print(a)
+
+result-
+60
+[10, 20, 30, 40, 60]
+
+a=[]
+for i in range(10):
+    num=int(input())
+    a.append(num)
+print(a)
+
+result-
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+[1, 2, 2, 3, 3, 4, 4, 5, 5, 6]
+
+a=[]
+print("Enter 10 Numbers:")
+for i in range(10):
+    num=int(input("Enter num"+str(i+1)))
+    a.append(num)
+print(a)
+
+Explanation:
+it will define a as a list
+"Enter 10 numbers" will be printed
+i is defined as 10 times i.e., from 0 to 9
+it will ask you to enter num1, num2 and so on. if you run without str, it wil throw an error since i is integer. so we need to change it as string. i+1 is given to start from 1, else it will start from 0.
+
+
+result-
+Enter 10 Numbers:
+Enter num110
+Enter num220
+Enter num330
+Enter num440
+Enter num550
+Enter num667
+Enter num789
+Enter num890
+Enter num910
+Enter num1010
+[10, 20, 30, 40, 50, 67, 89, 90, 10, 10]
+=============
+
+write a program to read 10 numbers from the keyboard and find their sum & average
+
+a=[]
+print("Enter 10 Numbers:")
+for i in range(10):
+    num=int(input("Enter num"+str(i+1)))
+    a.append(num)
+print(a)
+
+sum=0
+for i in a:
+    sum=sum+i
+print(sum)
+
+
+explanation: i will take as first entered number and add it to 0, then it will take the second number.
+result-
+
+Enter 10 Numbers:
+Enter num1 10
+Enter num220
+Enter num330
+Enter num440
+Enter num550
+Enter num660
+Enter num770
+Enter num880
+Enter num990
+Enter num10100
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+550
+
+for including average, we can use below code.
+
+a=[]
+print("Enter 10 Numbers:")
+for i in range(10):
+    num=int(input("Enter num"+str(i+1)))
+    a.append(num)
+print(a)
+
+sum=0
+for i in a:
+    sum=sum+i
+    avg=sum/10
+print(sum)
+print(avg)
+
+Enter 10 Numbers:
+Enter num110
+Enter num220
+Enter num330
+Enter num440
+Enter num550
+Enter num660
+Enter num770
+Enter num880
+Enter num990
+Enter num10100
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+550
+55.0
+================
+write a program to display n terms of natural numbers and their sum
+test data:7
+expected output: the first 7 natural number is:
+1 2 3 4 5 6 7
+
+a=int(input("Enter the value:"))
+b=[]
+for i in range(a):
+    b.append(i+1)
+print("The first ",a,"natural numbers are: ",b)
+print("Their sum is ",sum(b))
+
+
+Enter the value:7
+The first  7 natural numbers are:  [1, 2, 3, 4, 5, 6, 7]
+Their sum is  28
+
+====================
+write a program to display the cube of the number upto an integer
+
+test data: 
+input number of terms: 5
+
+expected output:
+Number is: 1 and cube of 1 is 1
+Number is: 2 and cube of 1 is 8
+Number is: 3 and cube of 1 is 27
+Number is: 4 and cube of 1 is 64
+Number is: 5 and cube of 1 is 125
+
+a=int(input("Enter the integer:"))
+for i in range(1,a+1):
+    print("Number is: ",i,"and Cube of ",i, "is ",i*i*i)
+
+
+result:
+Enter the integer:4
+Number is:  1 and Cube of  1 is  1
+Number is:  2 and Cube of  2 is  8
+Number is:  3 and Cube of  3 is  27
+Number is:  4 and Cube of  4 is  64
+
+
+================
+nested loop
+
+for i in range(1,6):
+    for j in range(1,3):
+        print(j,"Apple")
+
+        
+Result - 
+1 Apple
+2 Apple
+1 Apple
+2 Apple
+1 Apple
+2 Apple
+1 Apple
+2 Apple
+1 Apple
+2 Apple
+
+================
+expected output
+week: 1
+Day: 1
+Day: 2
+Day: 3
+
+week: 2
+Day: 1
+Day: 2
+Day: 3
+
+a=int(input("Enter the number of weeks: "))
+b=int(input("Enter the number of days: "))
+for i in range(1,a+1):
+    print("Week: ",i)
+    for j in range(1,b+1):
+        print("Day: ",j)
+
+
+        
+Enter the number of weeks: 5
+Enter the number of days: 7
+Week:  1
+Day:  1
+Day:  2
+Day:  3
+Day:  4
+Day:  5
+Day:  6
+Day:  7
+Week:  2
+Day:  1
+Day:  2
+Day:  3
+Day:  4
+Day:  5
+Day:  6
+Day:  7
+Week:  3
+Day:  1
+Day:  2
+Day:  3
+Day:  4
+Day:  5
+Day:  6
+Day:  7
+Week:  4
+Day:  1
+Day:  2
+Day:  3
+Day:  4
+Day:  5
+Day:  6
+Day:  7
+Week:  5
+Day:  1
+Day:  2
+Day:  3
+Day:  4
+Day:  5
+Day:  6
+Day:  7
+
+or 
+
+for i in range(1,3):
+    print("Week: ", i)
+    for j in range(1,4):
+        print("Day: ",j)
+
+
+        
+result:
+Week:  1
+Day:  1
+Day:  2
+Day:  3
+Week:  2
+Day:  1
+Day:  2
+Day:  3
+
+============
+for i in range(5):
+    print("*")
+
+result-
+*
+*
+*
+*
+*
+
+for i in range(5):
+    print("*",end="")
+
+result-
+*****
+
+for i in range(5):
+    print("*",end=",")
+
+result-
+*,*,*,*,*,
+
+
+
+write a program for below expected output:
+*
+**
+***
+****
+
+for i in range(1,5):
+    print("*"*i)
+
+or
+
+for i in range(1,5):
+    print()
+    for j in range(1,i+1):
+        print("*",end="")
+
+=============
+
+write a program for below output:
+
+1
+12
+123
+1234
+
+for i in range(1,5):
+    print()
+    for j in range(1,i+1):
+        print(j,end="")
+
+explanation:
+if we give print(), it will create separate rows
+
+=============
+while loop
+
+print numbers 1, 2, 3, 4, 5 using while loop
+
+i=1
+while(i<6):
+    print(i)
+    i=i+1
+
+=============
+
+write a loop statement to print the following series
+
+10, 20, 30, 40 --- 200
+
+i=10
+while(i<=200):
+    print(i)
+    i=i+10
+
+or
+
+i=10
+while(i<=200):
+    print(i, end=",")
+    i=i+10
+
+==========
+write a program to print first 10 natural numbers in reverse order
+
+i=10
+while(i>0):
+    print(i,end=",")
+    i=i-1
+
+result-
+10,9,8,7,6,5,4,3,2,1,
+
+==============
+write a program to find the factorial of a number
+
+for example:factorial of 5 means 5*4*4*3*2*1
+
+it is represented by 5!
+
+i=int(input("Enter the number:"))
+fact=1
+while(i>0):
+    fact=fact*i
+    i=i-1
+print(fact)
+
+====================
+collections:
+
+a=[1,2,3,4,5,6]
+print(type(a))
+
+
+result-
+<class 'list'>
+
+a=[1,2,3,4,5,6]
+print(a)
+
+result-
+[1, 2, 3, 4, 5, 6]
+
+a=[1,2,3,4,5,6]
+print(a)
+a.append(7)
+a.append(70)
+print(a)
+
+result-
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5, 6, 7, 70]
+
+a=[1,2,3,4,5,6]
+a.append(7)
+a.append("emc")
+print(a)
+
+result-
+[1, 2, 3, 4, 5, 6, 7, 'emc']
+
+a=[1,2,3,4,5,6]
+a.append(True)
+a.append("emc")
+print(a)
+
+result - [1, 2, 3, 4, 5, 6, True, 'emc']
+
+a=[1,2,3,4,5,6]
+a.append(True)
+a.append("emc")
+a.append(6)
+print(a)
+
+result-
+[1, 2, 3, 4, 5, 6, True, 'emc', 6]
+
+a=[1,2,3,4,5,6]
+print(a[0])
+
+0 is the index/position of values in a list
+so 1 is in 0th position/index, 2 is in 1st position, so on.
+
+hence above code will fetch the result of 1
+
+Append is used to add the values at the end of series
+insert is used to insert the values in the list based on the position you give.
+
+a=[1,2,3,4,5,6]
+a.insert(0,11)
+print(a[0])
+
+here 0 is the position for the value we want to insert, 11 is the corresponding value.
+
+result - 11
+
+a=[1,2,3,4,5,6]
+a.insert(0,11)
+print(a)
+
+result-
+[11, 1, 2, 3, 4, 5, 6]
+
+to replace the value of a particular position, we can use below code.
+
+a=[1,2,3,4,5,6]
+a[0]=11
+print(a)
+
+Result-
+[11, 2, 3, 4, 5, 6]
+
+to remove the value in the list
+
+a=[1,2,3,4,5,6]
+a.pop(5)
+print(a)
+
+result -
+[1, 2, 3, 4, 5]
+
+a=[1,2,3,4,5,6]
+a.pop()
+print(a)
+
+if we give pop without any position mentioned, it will remove last position's value by default.
+
+result-
+[1,2,3,4,5]
+
+a=[1,2,3,4,5,6]
+a.pop()
+a.pop()
+print(a)
+
+above will remove last two values
+
+result-
+[1, 2, 3, 4]
+
+Extend is used to merge two lists
+
+a=[1,2,3,4,5,6]
+b=[45,23]
+a.extend(b)
+print(a)
+
+result-
+[1, 2, 3, 4, 5, 6, 45, 23]
+
+a=[1,2,3,4,5,6]
+b=[45,23]
+b.extend(a)
+print(b)
+
+result-
+[45, 23, 1, 2, 3, 4, 5, 6]
+
+Tuple:
+a=(1,2,3,4)
+print(a)
+
+result-
+(1, 2, 3, 4)
+
+we cannot modify the tuple item. it means we cannot change the values in Tuple.
+but we can change tuple into list and modify the values.
+
+a=(1,2,3,4)
+b=list(a)
+print(a)
+print(b)
+
+result-
+(1, 2, 3, 4)
+[1, 2, 3, 4]
+
+a=(1,2,3,4)
+b=list(a)
+b.pop()
+print(a)
+print(b)
+
+result - 
+(1, 2, 3, 4)
+[1, 2, 3]
+
+Set - doesnt allow duplicates.
+
+a={1,2,3,4,5,6}
+print(a)
+
+result-
+{1,2,3,4,5,6}
+
+a={1,2,3,4,5,6,6}
+print(a)
+
+result-
+{1,2,3,4,5,6}
+
+to remove a value from set, use pop. here pop without any position mentioned will remove any value.
+a={1,2,3,4,5,6,6}
+a.pop()
+print(a)
+
+result-
+{2, 3, 4, 5, 6}
+
+to remove a particular value, use remove for set
+
+a={1,2,3,4,5,6,6}
+a.remove(1)
+print(a)
+
+explanation - 1 is the value we want to remove, not the index/position;since set doesn't allow duplicates, only one 6 is listed in result.
+
+result-
+{2, 3, 4, 5, 6}
+
+to add a value in the set:
+
+a={1,2,3,4,5,6,6}
+a.add(10)
+print(a)
+
+result-
+{1, 2, 3, 4, 5, 6, 10}
+
+Sets are unordered. values in set won't be of same order when you run it everytime. order differs. so when using pop()to remove a value, it may not be removing first positioned value always, it may remove any value randomly.
+
+
+Dictionary:
+a={"name":"emc"}
+print(a)
+
+here name is the key, emc is its value
+
+result-
+{'name': 'emc'}
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem"
+    }
+print(a)
+
+Explanation: we can add any number of fields in dictionary like above.
+
+Result-
+{'name': 'emc', 'age': 1, 'location': 'Salem'}
+
+we can add list also in dictionary.
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+print(a)
+
+result - 
+{'name': 'emc', 'age': 1, 'location': 'Salem', 'students': ['bala', 'john']}
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+print(a.keys())
+
+above code will print only the keys.
+
+result - 
+dict_keys(['name', 'age', 'location', 'students'])
+
+above code will print only the values.
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+print(a.values())
+
+result-
+dict_values(['emc', 1, 'Salem', ['bala', 'john']])
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+a["color"]="red"
+print(a)
+
+above code will add extra value of color=red.
+
+result-
+{'name': 'emc', 'age': 1, 'location': 'Salem', 'students': ['bala', 'john'], 'color': 'red'}
+
+update a value in dictionary:
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+a["age"]="2"
+print(a)
+
+result - 
+{'name': 'emc', 'age': '2', 'location': 'Salem', 'students': ['bala', 'john']}
+
+or we can do like below also.
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+a.update({"age":2})
+print(a)
+
+result- 
+{'name': 'emc', 'age': 2, 'location': 'Salem', 'students': ['bala', 'john']}
+
+to delete:
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+a.pop("age")
+print(a)
+
+
+result-
+{'name': 'emc', 'location': 'Salem', 'students': ['bala', 'john']}
+
+or we can do like below also.
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+del a["age"]
+print(a)
+
+result-
+{'name': 'emc', 'location': 'Salem', 'students': ['bala', 'john']}
+
+to delete a complete dictionary:
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+del a
+print(a)
+
+result- it will throw an error since we are asking to print a after it is deleted.
+
+Traceback (most recent call last):
+  File "C:/Users/15155/Documents/Praveen/Python/Collectioneg.py", line 8, in <module>
+    print(a)
+NameError: name 'a' is not defined
+
+to clear the values from dictionary:
+
+a={
+    "name":"emc",
+    "age":1,
+    "location":"Salem",
+    "students":["bala","john"]
+    }
+a.clear()
+print(a)
+
+
+result-
+{}
+
+Functions:
+=========
+
+def painter():
+    print("Painting")
+
+painter()
+
+result-
+Painting
+
+create a function called add(), sub(), mul(), div()
+-and get the input for a and b inside every function then print the result.
+
+def add():
+    print("Addition:")
+    a=int(input("Enter a: "))
+    b=int(input("Enter b: "))
+    print(a+b)
+def sub():
+    print("Subtraction:")
+    a=int(input("Enter a: "))
+    b=int(input("Enter b: "))
+    print(a-b)
+def mul():
+    print("Multiplication:")
+    a=int(input("Enter a: "))
+    b=int(input("Enter b: "))
+    print(a*b)
+def div():
+    print("Division:")
+    a=int(input("Enter a: "))
+    b=int(input("Enter b: "))
+    print(a/b)
+add()
+sub()
+mul()
+div()
+
+
+result-
+Addition:
+Enter a: 6
+Enter b: 3
+9
+Subtraction:
+Enter a: 6
+Enter b: 3
+3
+Multiplication:
+Enter a: 6
+Enter b: 3
+18
+Division:
+Enter a: 6
+Enter b: 3
+2.0
+
+==========
+def painter():
+    print("Message")
+
+painter()
+
+result-
+Message
+
+def painter():
+    print("Message")
+
+painter()
+painter("Paint my house")
+
+above code won't work. third line will call the fuction and print 'Message'. and then fourth line will be considered as a separate function, but not as the same painter function. so painter() and painter("Paint my house") are not same.
+
+if we need to print by passing the message into function, please use below.
+
+def painter(msg):
+    print("Message:",msg)
+
+painter("Paint my house")
+
+result-
+Message: Paint my house
+
+explanation for above code: msg is a variable, we are passing a value called as 'paint my house' into that variable. hence when we call that function, it will print the value. these are called parameterized functions. msg is called parameter or argument.
+
+=================
+get a integer number from user and pass it to the function called findevenorodd(). let the function print whether the number is even or odd.
+
+a=int(input("Enter the number:"))
+def findevenorodd():
+    if(a%2==0):
+        print("Number is Even")
+    else:
+        print("Number is Odd")
+
+findevenorodd()
+
+
+or
+
+def findevenorodd(b):
+    if(b%2==0):
+        print("Number is Even")
+    else:
+        print("Number is Odd")
+a=int(input("Enter the number: "))
+findevenorodd(a)
+
+explanation for above: whatever we pass in 'a' variable will be stored for b & check.
+
+===================
+get a integer number from user and pass it to the function called findpassorfail(). let the function print as pass if it is greater than 35 and fail if it is less than 35
+
+def findpassorfail(b):
+    if(b>=35):
+        print("Pass")
+    else:
+        print("Fail")
+a=int(input("Enter the number: "))
+findpassorfail(a)
+
+sample results:
+Enter the number: 89
+Pass
+
+Enter the number: 3
+Fail
+
+=============
+
+get input for a and b and pass it to the function called printrange(). let the function print numbers from a to b
+
+a=int(input("Enter the number A:"))
+b=int(input("Enter the number B:"))
+def printrange():
+    for i in range(a,b+1):
+        print(i)
+printrange()
+
+Result-
+Enter the number A:6
+Enter the number B:9
+6
+7
+8
+9
+
+or
+
+def printrange(a,b):
+    for i in range(a,b+1):
+        print(i)
+
+r1=int(input("Enter the first number: "))
+r2=int(input("Enter the second number: "))
+printrange(r1,r2)
+
+
+result-
+Enter the first number: 100
+Enter the second number: 112
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+
+====================
+Return keyword
+def painter():
+    return "I am a painter"
+
+print(painter())
+
+result-
+I am a painter
+
+def painter():
+    return "I am a painter"
+
+msg=painter()
+print(msg)
+
+result-
+I am a painter
+
+def valueofa():
+    return 10
+
+a=valueofa()
+print(a)
+
+result-
+10
+
+set  s-username='EMC' s_password='123'
+get input for usname and password
+create a function called validate. if uname and password matches the function should return True else False.
+
+s_username="EMC"
+s_password="123"
+uname=input("Enter the username: ")
+password=input("Enter the password: ")
+def validate():
+    if(s_username==uname and s_password==password):
+        print("True")
+    else:
+        print("False")
+validate()
+
+above code is to print True or False, not for return. Below code will work fr return.
+
+s_username="EMC"
+s_password="123"
+uname=input("Enter the username: ")
+password=input("Enter the password: ")
+def validate():
+    if(s_username==uname and s_password==password):
+        return True
+    else:
+        return False
+a=validate()
+print(a)
+
+=============
+ (a+b)*c
+
+get input for a and b and function called add() which should return the sum of a and b and multiply that sum with C.
+
+a=int(input("Enter the value for a: "))
+b=int(input("Enter the value for b: "))
+c=int(input("Enter the value for c: "))
+def sum():
+    return a+b
+
+addition=a+b
+output=addition*c
+print(output)
+
+or
+
+a=int(input("Enter the value for a: "))
+b=int(input("Enter the value for b: "))
+c=int(input("Enter the value for c: "))
+def sum(n1,n2):
+    return n1+n2
+
+addition=sum(a,b)
+output=addition*c
+print(output)
+
+or
+
+a=int(input("Enter the value for a: "))
+b=int(input("Enter the value for b: "))
+c=int(input("Enter the value for c: "))
+def sum():
+    return(a+b)
+
+addition=sum()
+output=addition*c
+print(output)
+
+==============
+class & objects
+
+class goa:
+    drink=""
+    def party(self):
+        print("Lets Party..!!")
+    def beach(self):
+        print("Enjoying the beach")
+
+ramesh = goa()
+suresh = goa()
+
+ramesh.party()
+suresh.beach()
+
+result-
+Lets Party..!!
+Enjoying the beach
+
+explanation for above program:
+goa is a class. Party and beach are two functions in it. drink is a variable (which is not needed for this code). ramesh and suresh are objectes under class. when we use function inside class, we should use it with Self.
+
+class goa:
+    name="abcde"
+    drink=""
+    def party(self):
+        print("Lets Party..!!")
+    def beach(self):
+        print("Enjoying the beach")
+
+ramesh = goa()
+suresh = goa()
+
+ramesh.name="Ramesh"
+print(ramesh.name)
+print(suresh.name)
+
+result-
+Ramesh
+abcde
+
+explanation - we are setting ramesh's name as Ramesh but not for suresh. thats why suresh's name is printed as abcde
+
+class goa:
+    name="abcde"
+    drink=""
+    def party(self):
+        print("Lets Party..!!")
+    def beach(self):
+        print("Enjoying the beach")
+
+ramesh = goa()
+suresh = goa()
+
+ramesh.name="Ramesh"
+suresh.name="Suresh"
+
+ramesh.drink="Yes"
+suresh.drink="No"
+
+print(ramesh.name)
+print("drink:",ramesh.drink)
+print(suresh.name)
+print("drink:",suresh.drink)
+
+result-
+Ramesh
+drink: Yes
+Suresh
+drink: No
+
+=============
+create a class called laptop and create following variables and functions.
+
+variables=>price, processer, ram
+create object HP, DELL, LENOVO
+
+class laptop:
+    price=""
+    processor=""
+    ram=""
+
+HP = laptop()
+DELL = laptop()
+LENOVO = laptop()
+
+HP.price="1200$"
+DELL.price="1300$"
+LENOVO.price="7800$"
+
+HP.processor="ABC"
+DELL.processor="DEF"
+LENOVO.processor="GHI"
+
+
+HP.ram="200GB"
+DELL.ram="300GB"
+LENOVO.ram="500GB"
+
+print(HP.price, HP.processor, HP.ram)
+print(DELL.price, DELL.processor, DELL.ram)
+print(LENOVO.price, LENOVO.processor, LENOVO.ram)
+
+result:
+1200$ ABC 200GB
+1300$ DEF 300GB
+7800$ GHI 500GB
+
+or
+
+class laptop:
+    price=0
+    processor=""
+    ram=""
+
+HP = laptop()
+DELL = laptop()
+LENOVO = laptop()
+
+HP.price=1200
+DELL.price=1300
+LENOVO.price=7800
+
+HP.processor="ABC"
+DELL.processor="DEF"
+LENOVO.processor="GHI"
+
+
+HP.ram="200GB"
+DELL.ram="300GB"
+LENOVO.ram="500GB"
+
+print(HP.price, HP.processor, HP.ram)
+print(DELL.price, DELL.processor, DELL.ram)
+print(LENOVO.price, LENOVO.processor, LENOVO.ram)
+
+==================
+Constructor and Self Keyword:
+
+class laptop:
+    def display(self):
+        print("Display")
+
+HP=laptop()
+HP.display()
+
+result-
+Display
+
+class laptop:
+    def __init__(self):
+        print("Demo")
+    def display(self):
+        print("Display")
+
+HP=laptop()
+
+result-
+Demo
+
+explanation: we didn't call the function but it still printed 'Demo'. because init is a function in-built by python. it is called constructor. 
+A constructor is a unique function that gets called automatically when an object is created of a class.
+
+class laptop:
+    def __init__(self):
+        self.price=0
+        self.ram=""
+        self.processor=""
+    def display(self):
+        print("Display")
+
+HP=laptop()
+HP.price=50000
+HP.ram="8GB"
+HP.processor="i5"
+
+print(HP.price)
+
+result-
+50000
+
+class laptop:
+    def __init__(self):
+        self.ram=""
+        self.processor=""
+    def display(self):
+        print("ram:",self.ram)
+        print("Processor:",self.processor)
+
+HP=laptop()
+
+HP.ram="8GB"
+HP.processor="i5"
+
+HP.display()
+
+
+result-
+ram: 8GB
+Processor: i5
+
+explanation - self in display function is nothing but object hp.
+
+class laptop:
+    def __init__(self):
+        self.ram=""
+        self.processor=""
+    def display(self):
+        print("ram:",self.ram)
+        print("Processor:",self.processor)
+
+HP=laptop()
+dell=laptop()
+
+HP.ram="8GB"
+HP.processor="i5"
+
+dell.ram="16GB"
+dell.processor="i7"
+
+HP.display()
+dell.display()
+
+result-
+ram: 8GB
+Processor: i5
+ram: 16GB
+Processor: i7
+
+class laptop:
+    pass
+
+above two line code is to create empty class.
+
+===============
+create a class called student
+create a variable=name and register number using constructor.
+create a function called display which should display the name and register number of the student
+
+class student:
+    def __init__(self):
+        self.name="harry"
+        self.registernumber="67895"
+    def display(self):
+        print("Name:",self.name)
+        print("Register Number:",self.registernumber)
+
+
+s1=student()
+print(s1.name)
+print(s1.registernumber)
+s1.display()
+        
+
+result-
+harry
+67895
+Name: harry
+Register Number: 67895
+
+or
+
+class student:
+    def __init__(self):
+        self.name="harry"
+        self.registernumber="67895"
+    def display(self):
+        print("Name:",self.name)
+        print("Register Number:",self.registernumber)
+
+
+s1=student()
+s2=student()
+
+s1.name="Manoj"
+s1.registernumber="12345"
+
+s2.name="Karthik"
+s2.registernumber="11111"
+
+s1.display()
+s2.display()
+        
+
+result-
+Name: Manoj
+Register Number: 12345
+Name: Karthik
+Register Number: 11111
+
+=====================
+create a class called fruit
+create a variable called using __init__ method
+create a object called apple. pass the color variable as a parameter through the object.
+
+class Fruit:
+    def __init__(self):
+        self.color=input("Please type the color of Apple: ")
+    def display(self):
+        print("Color:",self.color)
+
+apple=Fruit()
+apple.display()
+
+result:
+Please type the color of Apple: Red
+Color: Red
+
+or
+
+class Fruit:
+    def __init__(self,col):
+        self.color=col
+apple=Fruit("Red")
+print(apple.color)
+
+result:
+Red
+
+===============
+create a class called teacher
+
+create a variable=name and register number using constructor
+
+create a function called display which should display the name and register number of the teacher
+
+create t1 and t2 object and pass the name and reg number through object
+
+
+class teacher:
+    def __init__(self):
+        self.name="Kannan"
+        self.regno="12345"
+    def display(self):
+        print("Name of the teacher is: ",self.name)
+        print("Register number of teacher is: ",self.regno)
+
+t1=teacher()
+t2=teacher()
+
+t1.name=input("Enter the name of teacher1: ")
+t1.regno=input("Enter the register number of teacher1: ")
+
+t2.name=input("Enter the name of teacher2: ")
+t2.regno=input("Enter the register number of teacher2: ")
+
+t1.display()
+t2.display()
+
+result:
+Enter the name of teacher1: kanaga
+Enter the register number of teacher1: 22222
+Enter the name of teacher2: Mallika
+Enter the register number of teacher2: 44444
+Name of the teacher is:  kanaga
+Register number of teacher is:  22222
+Name of the teacher is:  Mallika
+Register number of teacher is:  44444
+
+or
+
+class teacher:
+    def __init__(self,name,reg):
+        self.name=name
+        self.regno=reg
+    def display(self):
+        print("Name of the teacher is: ",self.name)
+        print("Register number of teacher is: ",self.regno)
+
+t1=teacher(input("Enter the name of teacher1: "),input("Enter the register number of teacher1: "))
+t2=teacher(input("Enter the name of teacher2: "),input("Enter the register number of teacher2: "))
+
+t1.display()
+t2.display()
+
+result:
+Enter the name of teacher1: Kanaga
+Enter the register number of teacher1: 11111
+Enter the name of teacher2: Mallika
+Enter the register number of teacher2: 33333
+Name of the teacher is:  Kanaga
+Register number of teacher is:  11111
+Name of the teacher is:  Mallika
+Register number of teacher is:  33333
+
+or
+
+class teacher:
+    def __init__(self,name,reg):
+        self.name=name
+        self.regno=reg
+    def display(self):
+        print("Name of the teacher is: ",self.name)
+        print("Register number of teacher is: ",self.regno)
+
+t1=teacher("Thomas","1")
+t2=teacher("John","2")
+
+t1.display()
+t2.display()
+
+result:
+Name of the teacher is:  Thomas
+Register number of teacher is:  1
+Name of the teacher is:  John
+Register number of teacher is:  2
+===================
+
+create a class called calculator
+create 2 variables a and b
+create a function called add,sub,mul,div. all functions should take two variables as parameter.
+
+pass a and b values through object()
+
+class calculator:
+    def __init__(self):
+        self.a="1"
+        self.b="2"
+    def add(self):
+        print("Addition of two numbers is: ",self.a+self.b)
+    def sub(self):
+        print("Subtraction of two numbers is: ",self.a-self.b)
+    def mul(self):
+        print("Multiplication of two numbers is: ",self.a*self.b)
+    def div(self):
+        print("division of two numbers is: ",self.a/self.b)
+
+action=calculator()
+action.a=int(input("Enter the value for a: "))
+action.b=int(input("Enter the value for b: "))
+action.add()
+action.sub()
+action.mul()
+action.div()
+
+Result:
+Enter the value for a: 2
+Enter the value for b: 3
+Addition of two numbers is:  5
+Subtraction of two numbers is:  -1
+Multiplication of two numbers is:  6
+division of two numbers is:  0.6666666666666666
+
+or
+
+class calculator:
+    def add(self,a,b):
+        print("add:",a+b)
+
+obj1=calculator()
+obj1.add(10,2)
+
+result:
+12
+
+==============
+Types of Class variables:
+
+class phone():
+    def __init__(self,brand,price,chargertype):
+        self.brand=brand
+        self.price=price
+        self.chargertype=chargertype
+    def display(self):
+        print("Brand: ",self.brand)
+        print("Price: ",self.price)
+        print("Charger Type: ",self.chargertype)
+
+samsung=phone("Samsung","1000","B-Type")
+samsung.display()
+
+
+result:
+Brand:  Samsung
+Price:  1000
+Charger Type:  B-Type
+
+Explanation: self is the instance for object. self is equal to samsung. self differs for each object we create. these are called instance variables. variables used inside the constructor are called instance variables.
+
+Class variable:
+
+for example-if all the phones manaufatured are having chargertype as C-type, we dont need to mention chargertype for each object. we can just define it outside the contructor. these are called class variables.
+
+class phone():
+    chargertype="C-Type"
+    def __init__(self,brand,price):
+        self.brand=brand
+        self.price=price
+    def display(self):
+        print("Brand: ",self.brand)
+        print("Price: ",self.price)
+        print("Charger Type: ",self.chargertype)
+
+samsung=phone("Samsung","1000")
+samsung.display()
+
+nokia=phone("Nokia","500")
+nokia.display()
+
+
+
+result-
+Brand:  Samsung
+Price:  1000
+Charger Type:  C-Type
+Brand:  Nokia
+Price:  500
+Charger Type:  C-Type
+
+ 
+in case if you want to change chargertype from C type to B type, please write the code as below
+
+class phone():
+    chargertype="C-Type"
+    def __init__(self,brand,price):
+        self.brand=brand
+        self.price=price
+    def display(self):
+        print("Brand: ",self.brand)
+        print("Price: ",self.price)
+        print("Charger Type: ",self.chargertype)
+
+phone.chargertype="B-Type"
+
+samsung=phone("Samsung","1000")
+samsung.display()
+
+nokia=phone("Nokia","500")
+nokia.display()
+
+
+result-
+Brand:  Samsung
+Price:  1000
+Charger Type:  B-Type
+Brand:  Nokia
+Price:  500
+Charger Type:  B-Type
+
+=================
+Types of Class methods:
+
+Methods are nothing but Functions.
+
+class laptop():
+    chargertype="C-Type"
+    def __init__(self):
+        self.brand=""
+        self.price=35
+
+    def setprice(self,price):
+        self.price=price
+
+    def getprice(self):
+        print(self.price)
+
+
+hp=laptop()
+hp.getprice()
+
+
+result: 35
+
+if we want to set the price, pls use below
+
+class laptop():
+    chargertype="C-Type"
+    def __init__(self):
+        self.brand=""
+        self.price=35
+
+    def setprice(self,price):
+        self.price=price
+
+    def getprice(self):
+        print(self.price)
+
+
+hp=laptop()
+hp.setprice(20000)
+hp.getprice()
+
+result: 20000
+
+functions with Self are called instance methods. below is the example for class methods.
+
+class laptop():
+    chargertype="C-Type"
+    def __init__(self):
+        self.brand=""
+        self.price=35
+
+    def setprice(self,price):
+        self.price=price
+
+    def getprice(self):
+        print(self.price)
+
+    def changechargertype(cls):
+        cls.chargertype="B=Type"
+        print("Charger Type changed to B")
+
+
+hp=laptop()
+hp.setprice(20000)
+hp.getprice()
+
+laptop.changechargertype(laptop)
+
+instead of giving cls as laptop, we can use different way as below.
+
+class laptop():
+    chargertype="C-Type"
+    def __init__(self):
+        self.brand=""
+        self.price=35
+
+    def setprice(self,price):
+        self.price=price
+
+    def getprice(self):
+        print(self.price)
+
+    @classmethod
+    def changechargertype(cls):
+        cls.chargertype="B=Type"
+        print("Charger Type changed to B")
+
+
+hp=laptop()
+hp.setprice(20000)
+hp.getprice()
+
+laptop.changechargertype()
+
+Static method:
+class laptop():
+    chargertype="C-Type"
+    def __init__(self):
+        self.brand=""
+        self.price=35
+
+    def setprice(self,price):
+        self.price=price
+
+    def getprice(self):
+        print(self.price)
+
+    @classmethod
+    def changechargertype(cls):
+        cls.chargertype="B=Type"
+        print("Charger Type changed to B")
+
+    @staticmethod
+    def info():
+        print("This is laptop class")
+
+hp=laptop()
+hp.setprice(20000)
+hp.getprice()
+
+laptop.changechargertype()
+
+hp.info()
+
+
+result:
+20000
+Charger Type changed to B
+This is laptop class
+
